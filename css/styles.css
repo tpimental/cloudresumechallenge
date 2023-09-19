@@ -599,6 +599,13 @@ progress {
   content: "— ";
 }
 
+.center-img {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 200%; /* Adjust to your needs */
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -10975,4 +10982,14 @@ section.resume-section .resume-section-content {
   color:green;
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+.h-404 {
+  font-size: 5rem;
+  color: #007acc;
+}
+
+.p-404 {
+  font-size: 1.5rem;
+  color: #007acc;
 }
