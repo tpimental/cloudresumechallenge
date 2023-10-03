@@ -10,7 +10,7 @@ const outputElement = document.getElementById("visitor-count");
 
 window.onload = () => {
     //webpage is loaded
-    fetch("https://tpimental-functionapp.azurewebsites.net/api/HttpTrigger1")
+    fetch("https://backend-functionapp.azurewebsites.net/api/increment-counter-func")
         .then(response => response.json())
         .then(data => {
             //Process the data from the API response
