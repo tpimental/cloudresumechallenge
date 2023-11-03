@@ -16,7 +16,7 @@ window.onload = () => {
 
         })
         .catch(error => {
-            console.log("inc count error");
+            console.log("Increment count error:", error);
 
         })
     //get the new count
