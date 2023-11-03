@@ -21,7 +21,7 @@ window.onload = () => {
         })
     //get the new count
     fetch("https://tpimental-apimgmt.azure-api.net/backend-functionapp-current/get-count")
-        .then(resonse => {
+        .then(response => {
             if(response.ok){
                 return response.json();
             }else {
