@@ -39,7 +39,7 @@ window.onload = () => {
         })
         .catch(error => {
             // Error handling
-            console.log(" get count error");
+            console.error("Get Count Error: ", error);
         });
 }
 
