@@ -10,8 +10,25 @@ const outputElement = document.getElementById("visitor-count");
 
 window.onload = () => {
     //webpage is loaded
-    fetch("https://backend-functionapp.azurewebsites.net/api/increment-counter-func")
-        .then(response => response.json())
+    //increment the counter
+    fetch("https://tpimental-apimgmt.azure-api.net/backend-functionapp-current/increment-count")
+        .then(response => {
+
+        })
+        .catch(error => {
+
+        })
+    //get the new count
+    fetch("https://tpimental-apimgmt.azure-api.net/backend-functionapp-current/get-count")
+        .then(resonse => {
+            if(response.ok){
+                return response.json();
+            }else {
+                return response.json().then(data => {
+                    throw new Error(data.message); // If not successful, throw an error with the message
+                });
+            }
+        })
         .then(data => {
             //Process the data from the API response
             const responseData = data;
