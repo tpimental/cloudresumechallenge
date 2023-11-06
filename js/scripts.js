@@ -67,6 +67,16 @@ function addNumberSuffix(number) {
     }
 }
 
+// This script will start the fade transition after 5 seconds
+setTimeout(function() {
+    var gifContainer = document.getElementById("gifContainer");
+    gifContainer.style.opacity = 0;
+
+    var mainContent = document.getElementById("mainContent");
+    mainContent.style.opacity = 1;
+}, 5000); // 5000ms = 5 seconds
+
+
 
 
 window.addEventListener('DOMContentLoaded', event => {

@@ -91,6 +91,42 @@
   }
 }
 
+.gif-container{   /* Style it to look like a command prompt */
+ position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Black background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: opacity 2s ease-in-out; /* Fading transition */
+    z-index: 2; /* Make sure it's on top */
+  }
+
+.animated-gif {
+    width: auto;
+    height: auto;
+    /* Other styling for the GIF */
+}
+
+.content {
+    background-color: white; /* Background color of the rest of the page */
+    opacity: 0;
+    transition: opacity 2s ease-in-out 3s; /* Delayed fading transition */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Behind the GIF */
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
